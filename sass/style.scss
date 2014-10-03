@@ -1,0 +1,241 @@
+/*
+Theme Name: ServiceTeam
+Author: Aaron Bery
+Description: Custom Service Team
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+*/
+/* imports
+--------------------------------------------------*/
+@import "mixins/html5boilerplate";
+
+@import "variables/colors";
+/* variables
+--------------------------------------------------*/
+$bgGray: #b1b1b1;
+$boxbg: #f0f0f0;
+$grayLink: #404040;
+$boxHeaderGray: #777777;
+$purpleHeaders: #CA006C;
+$darkGray: #666;
+$themeAssetPath:'/wp-content/themes/serviceteam/images/';
+/* structure
+--------------------------------------------------*/
+html{
+	margin-top: 0!important;//override admin bar style
+}
+body{
+	background-image: url(#{$themeAssetPath}headerBg.jpg);
+	background-repeat: repeat-x;
+	background-color: $bgGray;
+	font-family: Arial, Helvetica, sans-serif;
+}
+img.alignleft{
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+a{
+	img{
+		border: 0;
+	}
+}
+#wrapper{
+	width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+.header{
+	position: relative;
+	height: 104px;
+	/*--- 124px height of header incl shaddow ---*/
+}
+.header--contact{
+	position: absolute;
+	top: 0.25em;
+	right: 0;
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+}
+img.header--image{
+	position: relative;
+	top: -10px;
+	left: 1em;
+}
+#global-menu{
+	position: relative;
+	top: -17px;
+	left: -40px;
+	overflow: hidden;
+	.menu{
+		float: left;
+	}
+	.search-form{
+		float: left;
+		overflow: hidden;
+		top: 8px;
+		position: relative;
+		input[type="search"]{
+			background: $boxbg;
+		}
+	}
+	.search-submit {
+		top: 6px;
+		position: relative;
+	}
+	ul{
+		list-style-type: none;
+		display: block;
+		overflow: hidden;
+		margin-right: 1em;
+		li{
+			border-right: 1px solid $darkGray;
+			padding:  0 1em;
+			color: #fff;
+			display: block;
+			float: left;
+			&:first-child{
+				border-left: 1px solid $darkGray;
+			}
+			a{
+				font-size: 0.85rem;
+				color: #ccc;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+#main{
+	float: left;
+	width: 73%;
+	display: block;
+}
+.rightCol{
+	float: left;
+	width: 25%;
+	margin-left: 2%;
+	.box{
+		img{
+			position: relative;
+			top: -0.8rem;
+			left: -0.5rem;
+		}
+	}
+}
+footer{
+	background: transparent;
+	color: #fff;
+	background-image: url(#{$themeAssetPath}migrated/footer_menu/footer_menu_bg.gif);
+	background-repeat: repeat-x;
+	overflow: hidden;
+	clear: both;
+	padding: 1%;
+	border-radius: 0.5em;
+	float: left;
+	ul{
+		width: 30%;
+		margin-right: 2%;
+		float: left;
+		display: block;
+		padding-left: 1%;
+		list-style-type: none;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+	}
+	a{
+		color: #FFFFFF;
+		font-size: 11px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		&:hover{
+			color: #ff0586;
+			font-size: 11px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight:normal;
+		}
+	}
+}
+.footer--bottom{
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	padding-top: 1em;
+}
+.footer--bottom-left,.footer--bottom-right{
+	width: 5%;
+	float: left;
+}
+.footer--bottom-center{
+	width: 90%;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+}
+.box{
+	background: $boxbg;
+	overflow: hidden;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 0.25em;
+	padding: 2.3rem 0 1rem 0;
+	position: relative;
+	h1,h2,h3,h4,h5,p,ul{
+		padding: 0 0.5rem;
+	}
+	h1,h2,h3,h4,h5{
+		color: $purpleHeaders;
+	}
+	h1{
+		font-size: 1rem;
+	}
+	h2{
+		font-size: 0.9rem;
+	}
+	p{
+		font-size: 0.85rem;
+	}
+	ul{
+		list-style-type: none;
+	}
+	li{
+		font-size: 0.85rem;
+		a{
+			font-size: 0.85rem;
+		}
+	}
+	a{
+		color: $grayLink;
+	}
+}
+.box--header{
+	background: $boxHeaderGray;
+	position: absolute;
+	top: 0em;
+	display: block;
+	width: 100%;
+	left: 0;
+	font-size: 1rem;
+	color: #fff;
+	padding: 0.5em;
+	font-weight: bold;
+	font-family: Helvetica,Verdana;
+}
+#slideshow{
+	border-top: 10px solid $pinkPurple;
+	p{
+		margin: 0;
+	}
+}
+/* misc
+-------------------------------------------------------------*/
+.page-item-53{
+	display: none!important;/*---hide sidebar page from nav---*/
+}
