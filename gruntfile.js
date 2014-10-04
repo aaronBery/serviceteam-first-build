@@ -67,7 +67,10 @@ grunt.config.init({
 					expand:true
 					,flatten: true
 					,src: [
-						'<%= pkg.styleDestDir %>/style.css'
+						[
+							'<%= pkg.styleDestDir %>/style.css'
+							,'<%= pkg.styleDestDir %>/ie-l9.css'
+						]
 					]
 					,dest: 'F://sites/serviceteam/wp-content/themes/serviceteam/'
 					,filter: 'isFile'

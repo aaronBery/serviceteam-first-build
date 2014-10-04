@@ -99,6 +99,7 @@ img.header--image{
 				border-left: 1px solid $darkGray;
 			}
 			a{
+				font-size: 0.85em;
 				font-size: 0.85rem;
 				color: #ccc;
 				text-decoration: none;
@@ -121,6 +122,8 @@ img.header--image{
 	.box{
 		img{
 			position: relative;
+			top: -0.8em;
+			left: -0.5em;
 			top: -0.8rem;
 			left: -0.5rem;
 		}
@@ -185,34 +188,72 @@ footer{
 	margin-top: 1em;
 	margin-bottom: 1em;
 	border-radius: 0.25em;
-	padding: 2.3rem 0 1rem 0;
+	padding: 3.3em 0 1em 0;
+	padding: 3.3rem 0 1rem 0;
 	position: relative;
-	h1,h2,h3,h4,h5,p,ul{
-		padding: 0 0.5rem;
+	table{
+		width: 98.5%!important;
+		margin-left: 0.75%;
+		margin-right: 0.75%;
+		margin-top: 1rem;
+		font-size: 0.8rem;
+		td{
+			padding: 0.5rem;
+		}
+		thead{
+			background: #ec0076;
+			color: white;
+		}
+		/*--- handle icons ---*/
+		img{
+			padding-right: 1em;
+			position: relative;
+			top: -0.25em;
+		}
+	}
+	h1,h2,h3,h4,h5,p,ul,article,header,section{
+		margin: 0 0.5em;
+		margin: 0 0.5rem;
+	}
+	section,article,header{
+		h1,h2,h3,h4,h5,p,ul,article{
+			margin: 0;
+		}
 	}
 	h1,h2,h3,h4,h5{
 		color: $purpleHeaders;
 	}
 	h1{
+		font-size: 1em;
 		font-size: 1rem;
 	}
 	h2{
+		font-size: 0.9em;
 		font-size: 0.9rem;
 	}
 	p{
+		font-size: 0.85em;
 		font-size: 0.85rem;
 	}
 	ul{
 		list-style-type: none;
 	}
 	li{
+		font-size: 0.85em;
 		font-size: 0.85rem;
 		a{
+			font-size: 0.85em;
 			font-size: 0.85rem;
 		}
 	}
 	a{
 		color: $grayLink;
+	}
+}
+aside{
+	.box{
+		padding-top: 3.1em;
+		padding-top: 3.1rem;
 	}
 }
 .box--header{
@@ -222,6 +263,7 @@ footer{
 	display: block;
 	width: 100%;
 	left: 0;
+	font-size: 1em;
 	font-size: 1rem;
 	color: #fff;
 	padding: 0.5em;
@@ -238,4 +280,11 @@ footer{
 -------------------------------------------------------------*/
 .page-item-53{
 	display: none!important;/*---hide sidebar page from nav---*/
+}
+/* layout specific
+-------------------------------------------------------------*/
+.page-template-wide-page-php,.error404,.search {
+	#main{
+		width: 100%;
+	}
 }

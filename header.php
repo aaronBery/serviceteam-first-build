@@ -37,7 +37,7 @@
 		// Run this after everything in this group has downloaded
 		// and executed, as well everything in all previous groups
 		}
-	},
+	}]);
 </script>
 <?php wp_head(); ?>
 </head>
@@ -45,8 +45,15 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
   <div id="header" class="header">
+    <!--
+    <?php
+      $logoId = 126;
+      $logoPage  = get_page($logoId);
+      $logoContent = $logoPage->post_content;
+      echo $logoContent;
+    ?>-->
     <img class="header--image" src="//serviceteam.london/wp-content/themes/serviceteam/images/migrated/s_mt_logo.gif">
-    <span class="header--contact">0800 111 1111</span>
+    <span class="header--contact">020 7837 4914</span>
     <div id="global-menu">
 		<?php include "nav-custom.php" ?>
 		<?php 

@@ -314,6 +314,7 @@ img.header--image {
       #global-menu ul li:first-child {
         border-left: 1px solid #666; }
       #global-menu ul li a {
+        font-size: 0.85em;
         font-size: 0.85rem;
         color: #ccc;
         text-decoration: none; }
@@ -331,6 +332,8 @@ img.header--image {
   margin-left: 2%; }
   .rightCol .box img {
     position: relative;
+    top: -0.8em;
+    left: -0.5em;
     top: -0.8rem;
     left: -0.5rem; }
 
@@ -388,26 +391,55 @@ footer {
   margin-top: 1em;
   margin-bottom: 1em;
   border-radius: 0.25em;
-  padding: 2.3rem 0 1rem 0;
+  padding: 3.3em 0 1em 0;
+  padding: 3.3rem 0 1rem 0;
   position: relative; }
-  .box h1, .box h2, .box h3, .box h4, .box h5, .box p, .box ul {
-    padding: 0 0.5rem; }
+  .box table {
+    width: 98.5% !important;
+    margin-left: 0.75%;
+    margin-right: 0.75%;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    /*--- handle icons ---*/ }
+    .box table td {
+      padding: 0.5rem; }
+    .box table thead {
+      background: #ec0076;
+      color: white; }
+    .box table img {
+      padding-right: 1em;
+      position: relative;
+      top: -0.25em; }
+  .box h1, .box h2, .box h3, .box h4, .box h5, .box p, .box ul, .box article, .box header, .box section {
+    margin: 0 0.5em;
+    margin: 0 0.5rem; }
+  .box section h1, .box section h2, .box section h3, .box section h4, .box section h5, .box section p, .box section ul, .box section article, .box article h1, .box article h2, .box article h3, .box article h4, .box article h5, .box article p, .box article ul, .box article article, .box header h1, .box header h2, .box header h3, .box header h4, .box header h5, .box header p, .box header ul, .box header article {
+    margin: 0; }
   .box h1, .box h2, .box h3, .box h4, .box h5 {
     color: #CA006C; }
   .box h1 {
+    font-size: 1em;
     font-size: 1rem; }
   .box h2 {
+    font-size: 0.9em;
     font-size: 0.9rem; }
   .box p {
+    font-size: 0.85em;
     font-size: 0.85rem; }
   .box ul {
     list-style-type: none; }
   .box li {
+    font-size: 0.85em;
     font-size: 0.85rem; }
     .box li a {
+      font-size: 0.85em;
       font-size: 0.85rem; }
   .box a {
     color: #404040; }
+
+aside .box {
+  padding-top: 3.1em;
+  padding-top: 3.1rem; }
 
 .box--header {
   background: #777777;
@@ -416,6 +448,7 @@ footer {
   display: block;
   width: 100%;
   left: 0;
+  font-size: 1em;
   font-size: 1rem;
   color: #fff;
   padding: 0.5em;
@@ -432,5 +465,10 @@ footer {
 .page-item-53 {
   display: none !important;
   /*---hide sidebar page from nav---*/ }
+
+/* layout specific
+-------------------------------------------------------------*/
+.page-template-wide-page-php #main, .error404 #main, .search #main {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
