@@ -68,7 +68,7 @@ Template Name: Homepage
           $workingWithUsId = 9;
           $workingWithUs  = get_page($workingWithUsId);
         ?>
-        <div class="box--header"><?php echo $multiTradeDifference->post_title; ?></div>
+        <div class="box--header"><?php echo $workingWithUs->post_title; ?></div>
         <?php
           echo $workingWithUs->post_content;
         ?>

@@ -18,7 +18,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php esc_attr_e( get_bloginfo( 'name' ), 'Service Team' ); ?></title>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="shortcut icon" href="<?php echo $_SERVER['themeAssetPath']; ?>favicon.ico">
+<!-- <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> -->
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/serviceteam/style.css?12424" />
 <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/serviceteam/ie-l9.css"" />
 <![endif]-->
@@ -45,14 +47,14 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
   <div id="header" class="header">
-    <!--
+    <span class="header--image">
     <?php
       $logoId = 126;
       $logoPage  = get_page($logoId);
       $logoContent = $logoPage->post_content;
       echo $logoContent;
-    ?>-->
-    <img class="header--image" src="//serviceteam.london/wp-content/themes/serviceteam/images/migrated/s_mt_logo.gif">
+    ?></span>
+    <!--<img class="header--image" src="/wp-content/themes/serviceteam/images/logo.png">-->
     <span class="header--contact">020 7837 4914</span>
     <div id="global-menu">
 		<?php include "nav-custom.php" ?>

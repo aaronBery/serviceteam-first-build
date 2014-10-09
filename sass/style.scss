@@ -35,6 +35,11 @@ img.alignleft{
 	margin-right: 1em;
 	margin-bottom: 1em;
 }
+img.alignright{
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
 a{
 	img{
 		border: 0;
@@ -58,10 +63,16 @@ a{
 	font-size: 28px;
 	font-weight: bold;
 }
-img.header--image{
-	position: relative;
-	top: -10px;
-	left: 1em;
+.header--image{
+	img{
+		position: relative;
+		top: -10px;
+		left: 0;
+	}
+	
+}
+span.header--image p {
+	display: inline;
 }
 #global-menu{
 	position: relative;
