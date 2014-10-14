@@ -476,7 +476,16 @@ aside .box {
 
 /* layout specific
 -------------------------------------------------------------*/
-.page-template-wide-page-php #main, .error404 #main, .search #main {
+.page-template-wide-page-php #main, .page-template-price-template-php #main, .error404 #main, .search #main {
   width: 100%; }
+
+.page-template-price-template-php #main table {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .page-template-price-template-php #main table td {
+    width: 33.3%; }
+.page-template-price-template-php #main ul {
+  list-style-type: disc;
+  padding: 1em 0 1em 1em; }
 
 /*# sourceMappingURL=style.css.map */

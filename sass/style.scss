@@ -294,8 +294,23 @@ aside{
 }
 /* layout specific
 -------------------------------------------------------------*/
-.page-template-wide-page-php,.error404,.search {
+.page-template-wide-page-php,.page-template-price-template-php,.error404,.search {
 	#main{
 		width: 100%;
+	}
+}
+.page-template-price-template-php{
+	#main{
+		table{
+			margin-top: 1em;
+			margin-bottom: 1em;
+			td{
+				width: 33.3%;
+			}
+		}
+		ul{
+			list-style-type: disc;
+			padding: 1em 0 1em 1em;
+		}	
 	}
 }
