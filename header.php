@@ -20,7 +20,7 @@
 <title><?php esc_attr_e( get_bloginfo( 'name' ), 'Service Team' ); ?></title>
 <link rel="shortcut icon" href="<?php echo $_SERVER['themeAssetPath']; ?>favicon.ico">
 <!-- <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> -->
-<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/serviceteam/style.css?12424" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/serviceteam/style.css?dsds" />
 <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/serviceteam/ie-l9.css"" />
 <![endif]-->

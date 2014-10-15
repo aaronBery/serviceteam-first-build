@@ -77,16 +77,15 @@ span.header--image p {
 #global-menu{
 	position: relative;
 	top: -17px;
-	left: -40px;
 	overflow: hidden;
 	.menu{
 		float: left;
 	}
 	.search-form{
-		float: left;
+		right: 0;
 		overflow: hidden;
 		top: 8px;
-		position: relative;
+		position: absolute;
 		input[type="search"]{
 			background: $boxbg;
 		}
@@ -100,9 +99,10 @@ span.header--image p {
 		display: block;
 		overflow: hidden;
 		margin-right: 1em;
+		padding-left: 0;
 		li{
 			border-right: 1px solid $darkGray;
-			padding:  0 1em;
+			padding:  0 2rem;
 			color: #fff;
 			display: block;
 			float: left;
