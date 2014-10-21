@@ -488,4 +488,20 @@ aside .box {
   list-style-type: disc;
   padding: 1em 0 1em 1em; }
 
+.box-custom--fixedMaintenance {
+  background-image: url(/wp-content/uploads/2014/10/facilitiesMaintenance.png);
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  .box-custom--fixedMaintenance p {
+    max-width: 440px;
+    left: 260px;
+    position: relative; }
+
+.box-custom--plannedMaintenance {
+  background-image: url(/wp-content/uploads/2014/10/plannedMaintenance.png);
+  background-repeat: no-repeat;
+  background-position: right center; }
+  .box-custom--plannedMaintenance p {
+    max-width: 440px; }
+
 /*# sourceMappingURL=style.css.map */

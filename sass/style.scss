@@ -314,3 +314,21 @@ aside{
 		}	
 	}
 }
+.box-custom--fixedMaintenance{
+	background-image: url(/wp-content/uploads/2014/10/facilitiesMaintenance.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	p{
+		max-width: 440px;
+		left: 260px;
+		position: relative;
+	}	
+}
+.box-custom--plannedMaintenance{
+	background-image: url(/wp-content/uploads/2014/10/plannedMaintenance.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	p{
+		max-width: 440px;
+	}
+}

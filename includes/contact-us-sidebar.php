@@ -1,20 +1,20 @@
 <div class="box promo">
 	<?php
-      $multiTradeDifferenceId = 67;//this month
-      $multiTradeDifference  = get_page($multiTradeDifferenceId);
+      $ourServicesId = 67;//this month
+      $ourServices  = get_page($ourServicesId);
     ?>
-    <div class="box--header"><?php echo $multiTradeDifference->post_title; ?></div>
+    <div class="box--header"><?php echo $ourServices->post_title; ?></div>
     <?php
-      echo $multiTradeDifference->post_content;
+      echo $ourServices->post_content;
     ?>
   </div>
   <div class="box promo">
 	<?php
-      $multiTradeDifferenceId = 58;//landord services
-      $multiTradeDifference  = get_page($multiTradeDifferenceId);
+      $landlordServicesId = 58;//landord services
+      $landlordServices  = get_page($landlordServicesId);
     ?>
-    <div class="box--header"><?php echo $multiTradeDifference->post_title; ?></div>
+    <div class="box--header"><?php echo $landlordServices->post_title; ?></div>
     <?php
-      echo $multiTradeDifference->post_content;
+      echo $landlordServices->post_content;
     ?>
   </div>

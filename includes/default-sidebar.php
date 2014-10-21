@@ -1,41 +1,41 @@
 <div class="box promo">
 	<?php
-      $multiTradeDifferenceId = 67;//this month
-      $multiTradeDifference  = get_page($multiTradeDifferenceId);
+      $ourServicesId = 67;//our Services
+      $ourServices  = get_page($ourServicesId);
     ?>
-    <div class="box--header"><?php echo $multiTradeDifference->post_title; ?></div>
+    <div class="box--header"><?php echo $ourServices->post_title; ?></div>
     <?php
-      echo $multiTradeDifference->post_content;
+      echo $ourServices->post_content;
     ?>
   </div>
   <div class="box promo">
 	<?php
-      $multiTradeDifferenceId = 55;//this month
-      $multiTradeDifference  = get_page($multiTradeDifferenceId);
+      $thisMonthId = 55;//this month
+      $thisMonth  = get_page($thisMonthId);
     ?>
-    <div class="box--header"><?php echo $multiTradeDifference->post_title; ?></div>
+    <div class="box--header"><?php echo $thisMonth->post_title; ?></div>
     <?php
-      echo $multiTradeDifference->post_content;
+      echo $thisMonth->post_content;
     ?>
   </div>
   <div class="box promo">
 	<?php
-      $multiTradeDifferenceId = 58;//landord services
-      $multiTradeDifference  = get_page($multiTradeDifferenceId);
+      $landLordServicesId = 58;//landord services
+      $landLordServices  = get_page($landLordServicesId);
     ?>
-    <div class="box--header"><?php echo $multiTradeDifference->post_title; ?></div>
+    <div class="box--header"><?php echo $landLordServices->post_title; ?></div>
     <?php
-      echo $multiTradeDifference->post_content;
+      echo $landLordServices->post_content;
     ?>
   </div>
    <div class="box promo">
 	<?php
-      $multiTradeDifferenceId = 63;//refer and reward
-      $multiTradeDifference  = get_page($multiTradeDifferenceId);
+      $referRewardId = 63;//refer and reward
+      $referReward  = get_page($referRewardId);
     ?>
-    <div class="box--header"><?php echo $multiTradeDifference->post_title; ?></div>
+    <div class="box--header"><?php echo $referReward->post_title; ?></div>
     <?php
-      echo $multiTradeDifference->post_content;
+      echo $referReward->post_content;
     ?>
   </div>
 	<!--<?php if ( is_active_sidebar( 'primary-widget-area' ) ) : ?>

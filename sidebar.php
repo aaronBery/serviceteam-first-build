@@ -8,6 +8,9 @@
       case(32):
           $sideBarInclude = "contact-us-sidebar";
           break;
+      case(34):
+          $sideBarInclude = "business-sidebar";
+          break;
     }
     include "includes/" . $sideBarInclude . ".php";
   ?>
