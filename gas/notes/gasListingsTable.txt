@@ -1,0 +1,11 @@
+/* CREATE GAS LISTINGS TABLE
+---------------------------------------------*/
+CREATE TABLE servcice__t34mGasByArea
+(
+ID int NOT NULL AUTO_INCREMENT,
+boroughName varchar(255) NOT NULL,
+boroughLabel varchar(255) NOT NULL,
+postcode varchar(255) NOT NULL,
+wpPageId int,
+PRIMARY KEY (ID)
+);
