@@ -1,0 +1,32 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+#static page override
+RewriteRule ^gas-london wp-content/themes/serviceteam/services/gasLondon.php [PT,L]
+RewriteRule ^gas/(.)+$ wp-content/themes/serviceteam/services/gasByLocation.php [PT,L]
+
+RewriteRule ^gas-cp-12-gas-safety-certificate-london wp-content/themes/serviceteam/services/gasCp12London.php [PT,L]
+RewriteRule ^gas-cp-12-gas-safety-certificate-(.)+$ wp-content/themes/serviceteam/services/gasCp12ByLocation.php [PT,L]
+
+RewriteRule ^gas-powerflush-london wp-content/themes/serviceteam/services/gasPowerFlushLondon.php [PT,L]
+RewriteRule ^gas-powerflush-(.)+$ wp-content/themes/serviceteam/services/gasPowerFlushByLocation.php [PT,L]
+
+RewriteRule ^gas-boiler-repair-london wp-content/themes/serviceteam/services/gasBoilerRepairLondon.php [PT,L]
+RewriteRule ^gas-boiler-repair-(.)+$ wp-content/themes/serviceteam/services/gasBoilerRepairByLocation.php [PT,L]
+
+RewriteRule ^gas-immersion-heaters-london wp-content/themes/serviceteam/services/gasImmersionLondon.php [PT,L]
+RewriteRule ^gas-immersion-heaters-(.)+$ wp-content/themes/serviceteam/services/gasImmersionByLocation.php [PT,L]
+
+RewriteRule ^gas-boiler-service-london wp-content/themes/serviceteam/services/gasBoilerServiceLondon.php [PT,L]
+RewriteRule ^gas-boiler-service-(.)+$ wp-content/themes/serviceteam/services/gasBoilerServiceByLocation.php [PT,L]
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
